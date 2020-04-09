@@ -1,4 +1,10 @@
 jQuery(document).ready(function () {
+  // For changing footer copyright data
+  jQuery(".copyright")
+    .empty()
+    .append(
+      'Copyright © 2020 <a href="https://amazingweb.website/malaga-al-dia/" title="Málaga al día"><span>Málaga al día</span></a>. Todos los derechos reservados.<br>Tema: Málaga por <a href="https://sites.google.com/uoc.edu/grupoconecta2/presentaci%C3%B3n-del-proyecto" target="_blank" title="conecta2" rel="author"><span>Conecta2 Desarrollo Web</span></a>. Funciona con <a href="https://wordpress.org" target="_blank" title="WordPress"><span>WordPress</span></a>.'
+    );
   /**
    * Search
    */
