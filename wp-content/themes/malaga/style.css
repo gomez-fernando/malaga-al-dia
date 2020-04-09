@@ -1,0 +1,82 @@
+/*
+Theme Name: Malaga
+Theme URI: https:
+Author: Conecta2
+Author URI: https:
+Description: Colormag child theme
+Template: colormag
+Version: 1.0
+License: GNU General Public License, version 3 (GPLv3)
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: one-column, two-columns, right-sidebar, left-sidebar, flexible-header, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, post-formats, footer-widgets, blog, e-commerce, news, rtl-language-support
+Text Domain: colormag
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+/*==========  Gray colors  ==========*/
+/*=====  Light colors  ======*/
+/*==========  Brand-colors  ==========*/
+/*==========  social links colors  ==========*/
+/* =Reset
+-------------------------------------------------------------- */
+.custom-header {
+  margin: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-side-header {
+  display: flex;
+}
+.header-title h1 {
+  font-size: 2rem;
+  /* margin-top: -2px; */
+  padding-bottom: 5px;
+}
+.header-title h1,
+h6 {
+  margin-left: 20px;
+}
+
+@media (max-width: 1075px) {
+  .custom-header {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .left-side-header {
+    justify-content: center;
+  }
+  .right-side-header {
+    text-align: center;
+  }
+  .right-side-header img {
+    max-width: 90%;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+  }
+}
+
+@media (max-width: 540px) {
+  .right-side-header img {
+    display: none;
+  }
+  .header-title h1 {
+    margin-top: -5px;
+    margin-left: 0;
+  }
+  .breaking-news {
+    display: none;
+  }
+  .left-side-header {
+    text-align: center;
+  }
+  .left-side-header img {
+    display: none;
+  }
+  div.news-bar div.inner-wrap.clearfix div.social-links.clearfix {
+    display: none;
+  }
+}

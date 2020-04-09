@@ -8,13 +8,15 @@
  * @subpackage ColorMag
  * @since      ColorMag 1.0
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11"/>
-	<?php
+  <meta charset="<?php bloginfo( 'charset' ); ?>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <?php
 	/**
 	 * This hook is important for wordpress plugins and other many things
 	 */
@@ -24,7 +26,7 @@
 
 <body <?php body_class(); ?>>
 
-<?php
+  <?php
 /**
  * WordPress function to load custom scripts after body.
  *
@@ -37,14 +39,14 @@ if ( function_exists( 'wp_body_open' ) ) {
 }
 ?>
 
-<?php do_action( 'colormag_before' ); ?>
+  <?php do_action( 'colormag_before' ); ?>
 
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'colormag' ); ?></a>
+  <div id="page" class="hfeed site">
+    <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'colormag' ); ?></a>
 
-	<?php do_action( 'colormag_before_header' ); ?>
+    <?php do_action( 'colormag_before_header' ); ?>
 
-	<?php
+    <?php
 	// Add the main total header area display type dynamic class.
 	$main_total_header_option_layout_class = get_theme_mod( 'colormag_main_total_header_area_display_type', 'type_one' );
 
@@ -56,39 +58,39 @@ if ( function_exists( 'wp_body_open' ) ) {
 	}
 	?>
 
-	<header id="masthead" class="site-header clearfix <?php echo esc_attr( $class_name ); ?>">
-		<div id="header-text-nav-container" class="clearfix">
+    <header id="masthead" class="site-header clearfix <?php echo esc_attr( $class_name ); ?>">
+      <div id="header-text-nav-container" class="clearfix">
 
-			<?php colormag_top_header_bar_display(); // Display the top header bar ?>
+        <?php colormag_top_header_bar_display(); // Display the top header bar ?>
 
-			<?php
+        <?php
 			if ( get_theme_mod( 'colormag_header_image_position', 'position_two' ) == 'position_one' ) {
 				colormag_render_header_image();
 			}
 			?>
 
-			<?php colormag_middle_header_bar_display(); // Display the middle header bar ?>
+        <?php  colormag_middle_header_bar_display(); // Display the middle header bar ?>
 
-			<?php
+        <?php
 			if ( get_theme_mod( 'colormag_header_image_position', 'position_two' ) == 'position_two' ) {
 				colormag_render_header_image();
 			}
 			?>
 
-			<?php colormag_below_header_bar_display(); // Display the below header bar  ?>
+        <?php  colormag_below_header_bar_display(); // Display the below header bar  ?>
 
-		</div><!-- #header-text-nav-container -->
+      </div><!-- #header-text-nav-container -->
 
-		<?php
+      <?php
 		if ( get_theme_mod( 'colormag_header_image_position', 'position_two' ) == 'position_three' ) {
 			colormag_render_header_image();
 		}
 		?>
 
-	</header>
+    </header>
 
-	<?php do_action( 'colormag_after_header' ); ?>
-	<?php do_action( 'colormag_before_main' ); ?>
+    <?php do_action( 'colormag_after_header' ); ?>
+    <?php do_action( 'colormag_before_main' ); ?>
 
-	<div id="main" class="clearfix">
-		<div class="inner-wrap clearfix">
+    <div id="main" class="clearfix">
+      <div class="inner-wrap clearfix">
