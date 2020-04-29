@@ -74,7 +74,7 @@ if (function_exists('wp_body_open')) {
 				<!-- Header custom -->
 				<div class="custom-header">
 					<div class="left-side-header">
-						<div> <a href=""><img
+						<div> <a href="https://amazingweb.website/malaga-al-dia"><img
 									src="https://amazingweb.website/malaga-al-dia/wp-content/uploads/2020/04/cropped-logo100.png"
 									alt="logo de Málaga al día"></a>
 						</div>
