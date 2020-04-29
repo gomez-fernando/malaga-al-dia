@@ -1,4 +1,6 @@
 <?php 
+
+// ESTA FUNCIÓN ES NECESARIA PARA LIGAR EL TEMA HIJO DE COLORMAG
 /**
  * Child theme functions file.
  */

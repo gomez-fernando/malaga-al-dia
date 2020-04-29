@@ -40,6 +40,7 @@ h6 {
   margin-left: 20px;
 }
 
+/* MEDIA QUERIES PARA EL FUNCIONAMIENTO RESPOSIVE DE LA WEB  */
 @media (max-width: 1075px) {
   .custom-header {
     display: block;

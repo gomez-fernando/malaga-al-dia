@@ -71,6 +71,7 @@ if (function_exists('wp_body_open')) {
 
 				<?php // colormag_middle_header_bar_display(); // Display the middle header bar?>
 
+				<!-- AQUÍ CREAMOS UNA NUEVA ESTRUCTURA DEL HEADER PARA REEMPLAZAR LA ANTERIOR, YA QUE QUEDA MEJOR ASÍ -->
 				<!-- Header custom -->
 				<div class="custom-header">
 					<div class="left-side-header">
